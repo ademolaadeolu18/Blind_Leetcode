@@ -42,3 +42,15 @@ arr = [["Bob","87"], ["Mike", "35"],["Bob", "52"], ["Jason","35"], ["Mike", "55"
 print(highestAverage(arr))
 
 
+#linkeddlist
+def reverseList(head):
+    prev = None
+    curr = head
+    while curr:
+        temp = curr.next
+        curr.next = prev
+        prev = curr
+        curr = temp
+    return prev
+
+
